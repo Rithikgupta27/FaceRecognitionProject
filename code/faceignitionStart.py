@@ -11,7 +11,7 @@ c=0
 m=0
 d=0
 while q<=2:
-    data_path = 'C:/Users/RohIL gupta/anaconda3/images/'
+    data_path = 'C:/Users/Rithik gupta/anaconda3/images/'
     onlyfiles = [f for f in listdir(data_path) if isfile(join(data_path,f))]
     Training_data, Lebels = [],[]
     for i , files in enumerate(onlyfiles):
@@ -25,7 +25,7 @@ while q<=2:
     model.train(np.asarray(Training_data),np.asarray(Lebels))
     print("training complete")
     q+=1
-face_classifier = cv2.CascadeClassifier('C:\\Users\RohIL gupta\\anaconda3\\Lib\\site-packages\\cv2\\data\\haarcascade_frontalface_default.xml')
+face_classifier = cv2.CascadeClassifier('C:\\Users\Rithik gupta\\anaconda3\\Lib\\site-packages\\cv2\\data\\haarcascade_frontalface_default.xml')
 
 
 def speak(audio):
